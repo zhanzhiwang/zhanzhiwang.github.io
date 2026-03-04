@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth status 2>&1 | head -5)",
+      "Bash(git config --global user.name && git config --global user.email)",
+      "Bash(git commit -m \"feat: 初始化个人简历网站\n\n温馨文艺风格，包含：\n- Hero 个人介绍区域（头像占位）\n- About 关于我 + 技能展示\n- Projects 项目卡片（含 n8n 工作流项目）\n- Contact 联系方式\n- 响应式布局 + 滚动动画\")",
+      "Bash(git config --global http.version HTTP/1.1 && git config --global http.postBuffer 157286400 && echo \"配置完成\")",
+      "Bash(git add -A && git commit -m \"feat: 新增视频展示区块\" && git push 2>&1)"
+    ]
+  }
+}

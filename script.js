@@ -58,3 +58,27 @@ if (avatarImg) {
     alert('替换头像：将 <div class="avatar-img"> 中的内容换成 <img> 标签即可 🌿');
   });
 }
+
+// ── Video: click thumbnail to play inline ──────
+document.querySelectorAll('.video-card').forEach(card => {
+  const thumb = card.querySelector('.video-thumb');
+  const bvid  = card.dataset.bvid;
+  if (!thumb || !bvid) return;
+
+  thumb.addEventListener('click', () => {
+    // Skip if already playing
+    if (thumb.querySelector('iframe')) return;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = `//player.bilibili.com/player.html?bvid=${bvid}&autoplay=1&high_quality=1&danmaku=0`;
+    iframe.allowFullscreen = true;
+    iframe.allow = 'autoplay; fullscreen';
+    thumb.appendChild(iframe);
+
+    // Hide play button and badge
+    const btn   = thumb.querySelector('.video-play-btn');
+    const badge = thumb.querySelector('.video-platform-badge');
+    if (btn)   btn.style.display   = 'none';
+    if (badge) badge.style.display = 'none';
+  });
+});
