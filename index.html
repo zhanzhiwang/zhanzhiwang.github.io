@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>姓名 · 个人主页</title>
+  <meta name="description" content="个人简历与作品展示 · AI爱好者 · 内容创作者" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================
+       Navigation
+       ============================ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">你的名字<span>.</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#projects">项目</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- ============================
+       Hero Section
+       ============================ -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Text -->
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, World</p>
+          <h1 class="hero-name">
+            你好，我是<br />
+            <em>你的名字</em>
+          </h1>
+          <p class="hero-role">
+            AI 爱好者
+            <span class="divider">·</span>
+            内容创作者
+            <span class="divider">·</span>
+            终身学习者
+          </p>
+          <p class="hero-bio">
+            正在探索 AI 与自动化的边界，喜欢把有趣的想法变成真实可用的工具。
+            热衷于用技术解决生活中的小问题，也热爱记录这一切。
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              ✦ 查看我的项目
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              联系我
+            </a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="hero-socials">
+            <a href="https://github.com/zhanzhiwang" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+              <!-- GitHub SVG -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="mailto:your@email.com" class="social-icon" title="邮件">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" title="微信">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-3.96-6.348-7.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.045c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-7.062-6.122zm-3.836 3.199c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982zm3.836 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Avatar Visual -->
+        <div class="hero-visual">
+          <div class="avatar-frame">
+            <div class="avatar-img" title="等待上传头像">
+              <span class="avatar-icon">🌿</span>
+              <span>点击上传头像</span>
+            </div>
+            <div class="avatar-badge">
+              <span class="badge-dot"></span>
+              开放合作中
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       About Section
+       ============================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Bio -->
+        <div class="about-content reveal">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title">关于我这个人</h2>
+          <p>
+            你好！我是 <strong>你的名字</strong>，目前在探索 AI 工具与自动化领域。
+            喜欢把繁琐的事情自动化，让生活和工作变得更有趣一点。
+          </p>
+          <p>
+            平时喜欢研究各种 AI 工具，搭建自动化工作流，
+            也会写一些技术类的文章分享给大家。
+            我相信技术应该让生活更美好，而不是更复杂。
+          </p>
+          <p>
+            目前对 <strong>AI 应用开发</strong>、<strong>自动化工具</strong>、
+            <strong>内容创作</strong> 等方向保持浓厚兴趣，持续学习中 ✨
+          </p>
+
+          <div class="stats-row">
+            <div class="stat-item">
+              <span class="stat-number">9+</span>
+              <span class="stat-label">个人工作流</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">学习热情</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">开放合作</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="reveal reveal-delay-2">
+          <p class="section-label">Skills</p>
+          <h2 class="section-title">我擅长的事</h2>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">🤖</div>
+              <div class="skill-name">AI 工具运用</div>
+              <div class="skill-desc">DeepSeek、ChatGPT、Gemini 等大模型的应用与 Prompt 工程</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">⚡</div>
+              <div class="skill-name">自动化工作流</div>
+              <div class="skill-desc">n8n、Make 等工具搭建高效的业务自动化流程</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">📝</div>
+              <div class="skill-name">内容创作</div>
+              <div class="skill-desc">技术文章写作、公众号内容、小红书运营</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">🔍</div>
+              <div class="skill-name">信息整合</div>
+              <div class="skill-desc">RSS 订阅、信息聚合、数据爬取与清洗</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       Projects Section
+       ============================ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <div class="reveal">
+          <p class="section-label">Projects</p>
+          <h2 class="section-title">我的项目</h2>
+          <p class="section-subtitle">点击卡片即可跳转到 GitHub 查看完整项目文件与说明</p>
+        </div>
+        <a href="https://github.com/zhanzhiwang" target="_blank" rel="noopener" class="btn btn-outline reveal">
+          查看全部项目 →
+        </a>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: n8n workflows -->
+        <a class="project-card reveal"
+           href="https://github.com/zhanzhiwang/n8n-workflows"
+           target="_blank" rel="noopener">
+          <div class="project-cover">
+            <div class="project-cover-gradient" style="background: linear-gradient(135deg, #FDE8D8 0%, #F5C6A0 100%);"></div>
+            <span class="project-cover-emoji">🤖</span>
+            <span class="project-badge">自动化</span>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <h3 class="project-name">n8n 自动化工作流合集</h3>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-desc">
+              9 个实用的 n8n 工作流，涵盖 AI 新闻聚合、GitHub Trending 内容生成、
+              提示词优化工具、小红书运营自动化等场景。
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">n8n</span>
+              <span class="project-tag">DeepSeek</span>
+              <span class="project-tag">飞书</span>
+              <span class="project-tag">Firecrawl</span>
+              <span class="project-tag">自动化</span>
+            </div>
+            <div class="project-footer">
+              <span>9 个工作流</span>
+              <span class="project-github-link">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                在 GitHub 查看
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 2: This portfolio -->
+        <a class="project-card reveal reveal-delay-1"
+           href="https://github.com/zhanzhiwang/zhanzhiwang.github.io"
+           target="_blank" rel="noopener">
+          <div class="project-cover">
+            <div class="project-cover-gradient" style="background: linear-gradient(135deg, #E8EFF5 0%, #C5D8E8 100%);"></div>
+            <span class="project-cover-emoji">🌿</span>
+            <span class="project-badge">前端</span>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <h3 class="project-name">个人简历网站</h3>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-desc">
+              你正在浏览的这个网站！温馨文艺风格的个人主页，
+              使用纯 HTML/CSS/JS 构建，部署于 GitHub Pages，零成本运行。
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">GitHub Pages</span>
+            </div>
+            <div class="project-footer">
+              <span>本站源码</span>
+              <span class="project-github-link">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                在 GitHub 查看
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 3: Placeholder -->
+        <a class="project-card reveal reveal-delay-2"
+           href="https://github.com/zhanzhiwang"
+           target="_blank" rel="noopener">
+          <div class="project-cover">
+            <div class="project-cover-gradient" style="background: linear-gradient(135deg, #EDE8F5 0%, #D5C8E8 100%);"></div>
+            <span class="project-cover-emoji">✨</span>
+            <span class="project-badge">即将公开</span>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <h3 class="project-name">项目名称（占位）</h3>
+              <span class="project-arrow">↗</span>
+            </div>
+            <p class="project-desc">
+              这里是项目描述，介绍这个项目解决了什么问题、有哪些亮点功能，
+              以及你在其中的贡献。替换成你真实的项目即可。
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">技术栈 A</span>
+              <span class="project-tag">技术栈 B</span>
+              <span class="project-tag">技术栈 C</span>
+            </div>
+            <div class="project-footer">
+              <span>进行中</span>
+              <span class="project-github-link">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                在 GitHub 查看
+              </span>
+            </div>
+          </div>
+        </a>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+
+  <!-- ============================
+       Contact Section
+       ============================ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">与我取得联系</h2>
+        <p class="section-subtitle">
+          无论是合作机会、有趣的想法，还是只是想打个招呼，
+          我都很期待与你交流 ☕
+        </p>
+
+        <div class="contact-cards">
+          <a href="mailto:your@email.com" class="contact-card">
+            <div class="contact-card-icon">✉️</div>
+            <div>
+              <div class="contact-card-label">邮件</div>
+              <div class="contact-card-value">your@email.com</div>
+            </div>
+          </a>
+          <a href="https://github.com/zhanzhiwang" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#B8714E">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-card-label">GitHub</div>
+              <div class="contact-card-value">zhanzhiwang</div>
+            </div>
+          </a>
+          <a href="#" class="contact-card">
+            <div class="contact-card-icon">💬</div>
+            <div>
+              <div class="contact-card-label">微信</div>
+              <div class="contact-card-value">your_wechat_id</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-divider">或者直接发邮件给我</div>
+
+        <a href="mailto:your@email.com" class="btn btn-primary">
+          发送邮件 ✉️
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================
+       Footer
+       ============================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">你的名字<span>.</span></span>
+      <p class="footer-copy">© 2026 · 用热爱构建，用代码表达</p>
+      <div class="footer-links">
+        <a href="#home">回到顶部</a>
+        <a href="https://github.com/zhanzhiwang" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
